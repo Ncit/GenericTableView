@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15FFC695CC459EE4A75285CD /* GenericTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFC3AF55827D3D542E39BD /* GenericTableVC.swift */; };
 		524C60A11E72A714004B4C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C60A01E72A714004B4C05 /* AppDelegate.swift */; };
 		524C60A31E72A714004B4C05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C60A21E72A714004B4C05 /* ViewController.swift */; };
 		524C60A61E72A714004B4C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524C60A41E72A714004B4C05 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15FFC3AF55827D3D542E39BD /* GenericTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableVC.swift; sourceTree = "<group>"; };
 		524C609D1E72A714004B4C05 /* GenericTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524C60A01E72A714004B4C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524C60A21E72A714004B4C05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FFCB7E16A473F6C0E0480D /* table_view_controller */ = {
+			isa = PBXGroup;
+			children = (
+				15FFC3AF55827D3D542E39BD /* GenericTableVC.swift */,
+			);
+			path = table_view_controller;
+			sourceTree = "<group>";
+		};
 		524C60941E72A714004B4C05 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 				524C60A71E72A714004B4C05 /* Assets.xcassets */,
 				524C60A91E72A714004B4C05 /* LaunchScreen.storyboard */,
 				524C60AC1E72A714004B4C05 /* Info.plist */,
+				15FFCB7E16A473F6C0E0480D /* table_view_controller */,
 			);
 			path = GenericTableView;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			files = (
 				524C60A31E72A714004B4C05 /* ViewController.swift in Sources */,
 				524C60A11E72A714004B4C05 /* AppDelegate.swift in Sources */,
+				15FFC695CC459EE4A75285CD /* GenericTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GenericTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = indie.ncit.GenericTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = indie.ncit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GenericTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = indie.ncit.GenericTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = indie.ncit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +313,7 @@
 				524C60B11E72A714004B4C05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
