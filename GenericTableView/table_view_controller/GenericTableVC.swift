@@ -14,12 +14,12 @@ struct TableAnchors
     var trailingConstraint: NSLayoutConstraint
 }
 
-class GenericTableVC<CellBaseType: UITableViewCell>: UIViewController, UITableViewDelegate where CellBaseType: DataInteractor
+class GenericTableVC: UIViewController, UITableViewDelegate
 {
     //MARK: - table view
 
     let tableView: UITableView = UITableView()
-    var dataSource: TableDataSource<CellBaseType>!
+    var dataSource: TableDataSource!
 
     //MARK: - table anchors
 
@@ -38,7 +38,8 @@ class GenericTableVC<CellBaseType: UITableViewCell>: UIViewController, UITableVi
     {
         self.init(nibName: nil, bundle: nil)
         configureTableViewLayout()
-        self.dataSource = TableDataSource<CellBaseType>(tableView: self.tableView)
+        self.dataSource = TableDataSource(tableView: self.tableView,supportTypes: [String(describing: Person.self):BaseExtraTextCell.self,
+                                                                          String(describing: Audio.self): BaseCell.self])
     }
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
